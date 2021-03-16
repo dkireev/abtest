@@ -1,6 +1,6 @@
 {
   "name": "@d_kireev/abtest",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Adds AB testing functionality",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.2.3"
   },
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }
