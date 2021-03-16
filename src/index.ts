@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import * as Cookies from 'js-cookie';
+import { useEffect, useState } from "react";
+import * as Cookies from "js-cookie";
 
 type Props = {
-  variant?: 'variant1' | 'variant2';
+  variant?: "variant1" | "variant2";
 };
 
 const useAbTest = (testName: string): Props => {
