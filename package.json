@@ -1,6 +1,6 @@
 {
   "name": "@d_kireev/abtest",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Adds AB testing functionality",
   "main": "index.js",
   "scripts": {
