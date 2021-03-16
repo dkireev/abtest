@@ -2,7 +2,7 @@
   "name": "@d_kireev/abtest",
   "version": "0.3.8",
   "description": "Adds AB testing functionality",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
