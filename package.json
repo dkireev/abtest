@@ -1,5 +1,5 @@
 {
-  "name": "@d_kireev/abtest",
+  "name": "optimize-abtest",
   "version": "0.3.9",
   "description": "Adds AB testing functionality",
   "main": "lib/index.js",
