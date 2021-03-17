@@ -1,6 +1,6 @@
 {
   "name": "optimize-abtest",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "Adds AB testing functionality",
   "main": "lib/index.js",
   "scripts": {
