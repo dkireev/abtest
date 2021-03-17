@@ -10,8 +10,10 @@
 2. Add a variant to it
 3. Edit Global JavaScript in the variant
 4. Add the next two lines of code there:
-    `window.dispatchEvent(new CustomEvent('<yourAbTestName>', {detail: 'variant1'}));`
-    `document.cookie = "<yourAbTestName>=variant1";`
+
+`window.dispatchEvent(new CustomEvent('<yourAbTestName>', {detail: 'variant1'}));`
+
+`document.cookie = "<yourAbTestName>=variant1";`
 
 ## A bit of explanation here
 The package uses session-long cookies with name of `<yourAbTestName>` and one of its values `variant1` or `variant2`.
