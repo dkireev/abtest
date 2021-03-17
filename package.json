@@ -2,6 +2,13 @@
   "name": "optimize-abtest",
   "version": "0.3.11",
   "description": "Adds AB testing functionality",
+  "keywords": [
+    "google optimize",
+    "optimize",
+    "optimize-abtest",
+    "ab test",
+    "ab experiment"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
