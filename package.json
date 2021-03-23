@@ -38,6 +38,6 @@
     "typescript": "^4.2.3"
   },
   "files": [
-    "**/*"
+    "index.js"
   ]
 }
