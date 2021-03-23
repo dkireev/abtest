@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import * as Cookies from "js-cookie";
 
 type Props = {
-  variant?: "variant1" | "variant2";
+  variant: "variant1" | "variant2";
+  isExperienceActive: boolean;
 };
 
 const useAbTest = (testName: string): Props => {
@@ -13,7 +14,8 @@ const useAbTest = (testName: string): Props => {
       Cookies.set(testName, e.detail);
     }) as EventListener);
   }, [testName]);
-  return { variant };
+  const isExperienceActive = variant === "variant1";
+  return { variant, isExperienceActive };
 };
 
 export default useAbTest;

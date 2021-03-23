@@ -1,6 +1,6 @@
 {
   "name": "optimize-abtest",
-  "version": "0.3.13",
+  "version": "1.0.0",
   "description": "Adds AB testing functionality",
   "keywords": [
     "google optimize",
