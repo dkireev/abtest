@@ -1,21 +1,22 @@
 {
   "name": "optimize-abtest",
-  "version": "1.0.2",
-  "description": "Adds AB testing functionality",
+  "version": "1.0.3",
+  "description": "Adds integrity of Google Optimize into your React app",
   "keywords": [
     "google optimize",
     "optimize",
     "optimize-abtest",
     "ab test",
-    "ab experiment"
+    "ab experiment",
+    "react"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "build": "tsc && mv \"src/index.js\" \"index.js\"",
+    "format": "prettier --write \"src/index.ts\" \"index.js\"",
     "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build && npm run lint && npm run format",
     "release": "npm version patch && npm publish"
   },
   "repository": {
@@ -37,6 +38,6 @@
     "typescript": "^4.2.3"
   },
   "files": [
-    "lib/**/*"
+    "**/*"
   ]
 }
