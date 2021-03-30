@@ -1,6 +1,6 @@
 {
   "name": "optimize-abtest",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Adds integrity of Google Optimize into your React app",
   "keywords": [
     "google optimize",
