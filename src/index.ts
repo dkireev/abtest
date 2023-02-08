@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import * as Cookies from "js-cookie";
+import Cookies from "js-cookie";
 
 type Props = {
-  variant: "variant1" | "variant2";
+  variant: "variant1" | "variant2" | string;
   isExperienceActive: boolean;
   isVariant1Active: boolean;
   isVariant2Active: boolean;
 };
 
 const useAbTest = (testName: string): Props => {
-  const [variant, setVariant] = useState(Cookies.getJSON(testName) || null);
+  const [variant, setVariant] = useState(Cookies.get(testName) || "");
   useEffect(() => {
     window.addEventListener(testName, ((e: CustomEvent<string>) => {
       setVariant(e.detail);
